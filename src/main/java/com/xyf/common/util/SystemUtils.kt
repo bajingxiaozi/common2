@@ -62,10 +62,4 @@ object SystemUtils {
 
     private const val NORMAL_EXIT = 0
 
-    @WorkThread
-    @Throws(Exception::class)
-    fun execute(vararg parameters: String, processListener: ProcessListener) {
-        execute(listOf(*parameters), processListener)
-    }
-
 }
