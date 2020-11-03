@@ -6,7 +6,8 @@ import org.slf4j.LoggerFactory
 import java.util.*
 
 object Lg {
-    private val LOGGER_MAP: MutableMap<String, Logger> = HashMap()
+
+    private val LOGGER_MAP: MutableMap<String, Logger> = mutableMapOf()
 
     @UiThread
     private fun getLogger(tag: String): Logger {

@@ -8,9 +8,9 @@ import java.io.IOException
 import java.io.InputStreamReader
 import java.nio.charset.StandardCharsets
 
-object SystemUtils {
+object ProcessUtils {
 
-    private val TAG = com.xyf.common.util.SystemUtils::class.java.simpleName
+    private const val TAG = "ProcessUtils"
 
     @Throws(Exception::class)
     fun killWindowsProcess(name: String) {
